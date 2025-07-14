@@ -173,3 +173,14 @@ if __name__ == '__main__':
         with app.app_context():
             db.create_all()
     app.run(debug=True)
+
+import os
+
+with app.app_context():
+    db_path = app.config.get('SQLALCHEMY_DATABASE_URI', '')
+    # إذا كانت قاعدة البيانات SQLite محلية ولم توجد بعد، أنشئها
+    if db_path.startswith('sqlite') and not os.path.exists('exchange.db'):
+        db.create_all()
+    # إذا كانت قاعدة بيانات خارجية (مثل PostgreSQL)، نفذ db.create_all() دائماً
+    elif not db_path.startswith('sqlite'):
+        db.create_all()
