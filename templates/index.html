@@ -84,10 +84,83 @@
             color: #3949ab;
             margin-bottom: 24px;
         }
+        @media (max-width: 900px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-end;
+                height: auto;
+                gap: 8px;
+                padding: 0 12px;
+            }
+            .navbar-links {
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+                align-items: flex-end;
+            }
+            .navbar-link {
+                width: 100%;
+                text-align: right;
+                font-size: 1rem;
+                padding: 10px 0;
+            }
+            .main-content {
+                margin-top: 70px;
+                padding: 0 2vw;
+            }
+            .welcome-box {
+                padding: 24px 6px;
+                min-width: 0;
+                width: 98%;
+            }
+        }
         @media (max-width: 600px) {
-            .navbar-container { padding: 0 8px; }
-            .welcome-box { padding: 28px 8px; }
-            .main-content { margin-top: 70px; }
+            .navbar-container {
+                padding: 0 2px;
+                flex-direction: column;
+                gap: 2px;
+            }
+            .navbar-links {
+                flex-direction: column;
+                width: 100%;
+                gap: 2px;
+                align-items: flex-end;
+            }
+            .navbar-link {
+                width: 100%;
+                text-align: right;
+                font-size: 0.97rem;
+                padding: 9px 0;
+            }
+            .main-content {
+                margin-top: 55px;
+                padding: 0 1vw;
+                min-height: 50vh;
+            }
+            .welcome-box {
+                padding: 12px 2px;
+                min-width: 0;
+                width: 100%;
+            }
+            .welcome-title {
+                font-size: 1.3rem;
+            }
+            .welcome-en {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .welcome-box {
+                padding: 6px 0;
+                border-radius: 10px;
+            }
+            .main-content {
+                margin-top: 35px;
+            }
+            .navbar-link {
+                font-size: 0.85rem;
+                padding: 7px 0;
+            }
         }
     </style>
 </head>
