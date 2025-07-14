@@ -17,7 +17,6 @@
             width: 100%;
             background: #1a237e;
             color: #fff;
-            padding: 0 0;
             box-shadow: 0 2px 8px #0001;
             position: fixed;
             top: 0;
@@ -87,50 +86,43 @@
         @media (max-width: 900px) {
             .navbar-container {
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: stretch;
                 height: auto;
-                gap: 8px;
-                padding: 0 12px;
+                gap: 0;
+                padding: 0 4vw;
             }
             .navbar-links {
                 flex-direction: column;
-                gap: 5px;
+                gap: 0;
                 width: 100%;
-                align-items: flex-end;
+                align-items: stretch;
+                margin-top: 8px;
             }
             .navbar-link {
                 width: 100%;
                 text-align: right;
                 font-size: 1rem;
-                padding: 10px 0;
+                padding: 12px 0 12px 0;
+                border-radius: 0;
+                border-bottom: 1px solid #223;
+            }
+            .navbar-link:last-child {
+                border-bottom: none;
             }
             .main-content {
                 margin-top: 70px;
                 padding: 0 2vw;
             }
             .welcome-box {
-                padding: 24px 6px;
+                padding: 18px 4px;
                 min-width: 0;
-                width: 98%;
+                width: 100%;
+                border-radius: 13px;
             }
         }
         @media (max-width: 600px) {
             .navbar-container {
-                padding: 0 2px;
-                flex-direction: column;
-                gap: 2px;
-            }
-            .navbar-links {
-                flex-direction: column;
-                width: 100%;
-                gap: 2px;
-                align-items: flex-end;
-            }
-            .navbar-link {
-                width: 100%;
-                text-align: right;
-                font-size: 0.97rem;
-                padding: 9px 0;
+                padding: 0 1vw;
             }
             .main-content {
                 margin-top: 55px;
@@ -138,30 +130,32 @@
                 min-height: 50vh;
             }
             .welcome-box {
-                padding: 12px 2px;
+                padding: 8px 1px;
                 min-width: 0;
                 width: 100%;
+                border-radius: 8px;
             }
             .welcome-title {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
             .welcome-en {
-                font-size: 1rem;
+                font-size: 0.98rem;
             }
         }
         @media (max-width: 400px) {
             .welcome-box {
-                padding: 6px 0;
-                border-radius: 10px;
+                padding: 3px 0;
+                border-radius: 5px;
             }
             .main-content {
-                margin-top: 35px;
+                margin-top: 30px;
             }
             .navbar-link {
-                font-size: 0.85rem;
+                font-size: 0.82rem;
                 padding: 7px 0;
             }
         }
+
     </style>
 </head>
 <body>
