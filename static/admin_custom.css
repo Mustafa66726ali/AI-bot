@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%) !important;
+    font-family: 'Cairo', Arial, sans-serif !important;
+}
+.navbar, .navbar.navbar-default, .navbar.navbar-inverse, .navbar.navbar-light {
+    background: #1a237e !important;
+    color: #fff !important;
+    border: none !important;
+    direction: rtl;
+}
+.navbar .navbar-brand, .navbar .navbar-nav > li > a {
+    color: #fff !important;
+    font-family: 'Cairo', Arial, sans-serif !important;
+    font-size: 1.1rem;
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li.active > a {
+    background: #1976d2 !important;
+    color: #fff !important;
+    box-shadow: 0 2px 8px 0 rgba(25, 118, 210, 0.10);
+    text-decoration: none;
+}
+/* تخصيص نصوص وروابط الشريط العلوي لتكون أوضح بالعربية */
+.navbar .navbar-nav > li > a {
+    font-family: 'Cairo', Arial, sans-serif !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.content, .admin-content, .container-fluid {
+    background: #fff !important;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+    margin-top: 30px;
+    padding: 30px 18px;
+}
+h1, h2, h3, h4, h5, h6, label, .page-header, .breadcrumb, .table > thead > tr > th {
+    font-family: 'Cairo', Arial, sans-serif !important;
+}
+.breadcrumb {
+    background: transparent;
+}
+.btn-primary, .btn-info, .btn-success {
+    background: #3949ab !important;
+    border: none !important;
+}
+.btn-primary:hover, .btn-info:hover, .btn-success:hover {
+    background: #1a237e !important;
+}
+html[lang="ar"] body, body[dir="rtl"] {
+    direction: rtl;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إعدادات Twilio</title>
+    <style>
+        body { font-family: 'Cairo', Arial, sans-serif; background: #f8fafc; }
+        .container { max-width: 480px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0001; padding: 32px; }
+        h2 { color: #3949ab; text-align: center; }
+        label { display: block; margin-top: 18px; color: #333; }
+        input[type=text] { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #bbb; margin-top: 7px; }
+        button { margin-top: 28px; width: 100%; background: #3949ab; color: #fff; border: none; padding: 13px; border-radius: 8px; font-size: 1.1rem; cursor: pointer; }
+        button:hover { background: #1a237e; }
+        .msg { color: green; text-align: center; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>إعدادات Twilio</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="msg">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <form method="post">
+            <label>Account SID</label>
+            <input type="text" name="TWILIO_ACCOUNT_SID" value="{{ values['TWILIO_ACCOUNT_SID'] }}">
+            <label>Auth Token</label>
+            <input type="text" name="TWILIO_AUTH_TOKEN" value="{{ values['TWILIO_AUTH_TOKEN'] }}">
+            <label>WhatsApp Number</label>
+            <input type="text" name="TWILIO_WHATSAPP_NUMBER" value="{{ values['TWILIO_WHATSAPP_NUMBER'] }}">
+            <button type="submit">حفظ الإعدادات</button>
+        </form>
+    </div>
+</body>
+</html>

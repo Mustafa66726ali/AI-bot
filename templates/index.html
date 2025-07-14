@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر رييل | Reel Store Exchange Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+            min-height: 100vh;
+            font-family: 'Cairo', Arial, sans-serif;
+        }
+        .navbar {
+            width: 100%;
+            background: #1a237e;
+            color: #fff;
+            padding: 0 0;
+            box-shadow: 0 2px 8px #0001;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .navbar-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            height: 60px;
+        }
+        .navbar-brand {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 18px;
+        }
+        .navbar-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.05rem;
+            padding: 8px 18px;
+            border-radius: 5px;
+            transition: background 0.18s;
+        }
+        .navbar-link:hover, .navbar-link.active {
+            background: #3949ab;
+        }
+        .main-content {
+            margin-top: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
+        .welcome-box {
+            background: #fff;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            border-radius: 20px;
+            padding: 48px 32px 40px 32px;
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+        .welcome-title {
+            font-size: 2.3rem;
+            color: #1a237e;
+            margin-bottom: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .welcome-en {
+            font-size: 1.2rem;
+            color: #3949ab;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 600px) {
+            .navbar-container { padding: 0 8px; }
+            .welcome-box { padding: 28px 8px; }
+            .main-content { margin-top: 70px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">متجر رييل</a>
+            <div class="navbar-links">
+                <a href="/" class="navbar-link">الرئيسية</a>
+                <a href="/admin" class="navbar-link">إدارة البيانات</a>
+                <a href="/settings/twilio" class="navbar-link">إعدادات Twilio</a>
+                <a href="/settings/ai" class="navbar-link">إعدادات الذكاء الاصطناعي</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="welcome-box">
+            <div class="welcome-title">مرحبًا بك في متجر رييل لتبديل العملات</div>
+            <div class="welcome-en">Welcome to Reel Store Exchange Company</div>
+            <div style="color:#222; font-size:1.07rem; margin-bottom:16px;">نقدم لك أفضل خدمات تبديل العملات بسرعة وأمان. يمكنك إدارة حسابك وإعدادات النظام بسهولة من خلال الشريط العلوي.</div>
+        </div>
+    </div>
+</body>
+</html>

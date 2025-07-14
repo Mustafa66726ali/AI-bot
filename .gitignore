@@ -1,0 +1,30 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment and secrets
+.env
+.env.*
+
+# Databases and instance files
+*.db
+instance/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Flask/Migrations
+migrations/
+
+# Logs
+*.log
+
+# Static build artifacts
+/staticfiles/
